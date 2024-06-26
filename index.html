@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Background Remover</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Background Remover</h1>
+    <div class="controls">
+      <input type="file" id="imageUpload" accept=".jpg, .jpeg, .png">
+      <button id="removeBackgroundBtn">Remove Background</button>
+      <button id="downloadBtn" disabled>Download</button>
+      <select id="arrangeSelect">
+        <option value="original">Original</option>
+        <option value="center">Center</option>
+        <option value="cover">Cover</option>
+      </select>
+    </div>
+    <div class="result">
+      <h2>Result</h2>
+      <img id="outputImage" src="#" alt="Output Image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
